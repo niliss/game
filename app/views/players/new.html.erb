@@ -1,0 +1,20 @@
+<%= form_for :player, url: players_path  do |f| %>
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+    <%= f.label :username %>
+    <%= f.text_field :username %><br>
+    <%= f.label :points %>
+    <%= f.number_field :points %><br>    
+    <%= f.label :active %>
+    <%= f.check_box :active %><br>
+  </p>
+ 
+  
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
